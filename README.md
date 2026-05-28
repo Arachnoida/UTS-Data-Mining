@@ -136,5 +136,5 @@ notebooks/
 
 # Author
 
-Ida Bagus Gede Dhananjaya
+Ida Bagus Gede Dhananjaya |
 Universitas Udayana
