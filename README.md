@@ -2,34 +2,34 @@
 
 # 🧠 Neural Network vs Support Vector Machine
 
-### Comparative Analysis on MNIST & FashionMNIST
+### Analisis Komparatif pada Dataset MNIST dan FashionMNIST
 
 <p align="center">
-Machine Learning Comparative Study using PyTorch and Scikit-learn
+Implementasi dan Perbandingan Model Machine Learning menggunakan PyTorch dan Scikit-learn
 </p>
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python)
 ![PyTorch](https://img.shields.io/badge/PyTorch-CUDA%2012.6-red?style=for-the-badge&logo=pytorch)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-SVM-orange?style=for-the-badge&logo=scikitlearn)
-![Status](https://img.shields.io/badge/Project-Completed-success?style=for-the-badge)
+![Status](https://img.shields.io/badge/Project-Selesai-success?style=for-the-badge)
 
 </div>
 
 ---
 
-# 📌 Project Overview
+# 📌 Gambaran Umum Proyek
 
-This project was developed as part of the **Data Mining** course assignment to compare the performance of **Neural Network** and **Support Vector Machine (SVM)** models on image classification tasks using the **MNIST** and **FashionMNIST** datasets.
+Proyek ini dikembangkan sebagai tugas mata kuliah **Data Mining** dengan tujuan membandingkan performa algoritma **Neural Network** dan **Support Vector Machine (SVM)** pada tugas klasifikasi citra menggunakan dataset **MNIST** dan **FashionMNIST**.
 
-The implementation focuses on evaluating classification performance using several machine learning evaluation metrics and analyzing the strengths and weaknesses of each model architecture and kernel configuration.
+Implementasi difokuskan pada evaluasi performa klasifikasi menggunakan berbagai metrik evaluasi machine learning serta analisis terhadap kekuatan dan kelemahan masing-masing model dan konfigurasi kernel.
 
-The project utilizes:
+Proyek ini memanfaatkan:
 
-- PyTorch with CUDA acceleration
+- PyTorch dengan akselerasi CUDA
 - Scikit-learn SVM
-- Jupyter Notebook modular workflow
-- Matplotlib visualization
-- Confusion Matrix analysis
+- Workflow modular berbasis Jupyter Notebook
+- Visualisasi menggunakan Matplotlib
+- Analisis Confusion Matrix
 
 ---
 
@@ -37,28 +37,28 @@ The project utilizes:
 
 ## MNIST
 
-- Handwritten digit dataset
-- 10 classes (0–9)
-- Grayscale images (28×28)
+- Dataset digit tulisan tangan
+- 10 kelas (0–9)
+- Citra grayscale berukuran 28×28
 
 ## FashionMNIST
 
-- Fashion image dataset
-- 10 clothing categories
-- Grayscale images (28×28)
+- Dataset citra fashion
+- 10 kategori pakaian
+- Citra grayscale berukuran 28×28
 
 ---
 
-# 🧠 Models Used
+# 🧠 Model yang Digunakan
 
 ## Neural Network
 
-| Model | Architecture                        |
+| Model | Arsitektur                          |
 | ----- | ----------------------------------- |
 | NN-1  | 784 → 128 → 10                      |
 | NN-2  | 784 → 256 → Dropout(0.3) → 128 → 10 |
 
-### Configuration
+### Konfigurasi Neural Network
 
 - Activation Function: ReLU
 - Optimizer: Adam
@@ -69,23 +69,23 @@ The project utilizes:
 
 ## Support Vector Machine (SVM)
 
-The following kernels were evaluated:
+Kernel yang digunakan:
 
 - Linear
 - Polynomial
 - RBF
 - Sigmoid
 
-### Configuration
+### Konfigurasi SVM
 
-- StandardScaler normalization
-- Scikit-learn SVC implementation
+- Normalisasi menggunakan StandardScaler
+- Implementasi menggunakan Scikit-learn SVC
 
 ---
 
-# 📏 Evaluation Metrics
+# 📏 Metrik Evaluasi
 
-The models were evaluated using:
+Model dievaluasi menggunakan:
 
 - Accuracy
 - Precision
@@ -95,78 +95,78 @@ The models were evaluated using:
 
 ---
 
-# 🏆 Best Results
+# 🏆 Hasil Terbaik
 
-| Dataset      | Best Model            | F1-score |
+| Dataset      | Model Terbaik         | F1-score |
 | ------------ | --------------------- | -------- |
 | MNIST        | Neural Network (NN-2) | 0.9808   |
 | FashionMNIST | Neural Network (NN-1) | 0.8802   |
 
-> Best SVM Kernel: **RBF Kernel**
+> Kernel terbaik pada SVM: **RBF Kernel**
 
 ---
 
-# 📊 Model Comparison
+# 📊 Perbandingan Model
 
-## F1-score Comparison
+## Grafik Perbandingan F1-score
 
 ![Comparison Chart](results/comparison_chart.png)
 
 ---
 
-# 🔍 Confusion Matrix Analysis
+# 🔍 Analisis Confusion Matrix
 
-## FashionMNIST - Best Neural Network (NN-1)
+## FashionMNIST - Neural Network Terbaik (NN-1)
 
 ![FashionMNIST NN](results/confusion_matrix/fashionmnist_best_neural_network_cm.png)
 
 ---
 
-## FashionMNIST - Worst SVM Performance (Sigmoid)
+## FashionMNIST - Performa SVM Terendah (Sigmoid)
 
 ![FashionMNIST SVM Sigmoid](results/confusion_matrix/fashionmnist_svm_sigmoid_cm.png)
 
 ---
 
-## MNIST - Best Neural Network (NN-2)
+## MNIST - Neural Network Terbaik (NN-2)
 
 ![MNIST NN](results/confusion_matrix/mnist_best_neural_network_cm.png)
 
 ---
 
-## MNIST - Best SVM Kernel (RBF)
+## MNIST - Kernel SVM Terbaik (RBF)
 
 ![MNIST SVM RBF](results/confusion_matrix/mnist_svm_rbf_cm.png)
 
 ---
 
-## MNIST - Worst SVM Performance (Sigmoid)
+## MNIST - Performa SVM Terendah (Sigmoid)
 
 ![MNIST SVM Sigmoid](results/confusion_matrix/mnist_svm_sigmoid_cm.png)
 
 ---
 
-# 📈 Analysis Summary
+# 📈 Ringkasan Analisis
 
-From the experimental results:
+Berdasarkan hasil eksperimen yang dilakukan:
 
-- Neural Network achieved the highest overall performance on both datasets.
-- The NN-2 architecture produced the best performance on MNIST with an F1-score of 0.9808.
-- The NN-1 architecture achieved the best result on FashionMNIST with an F1-score of 0.8802.
-- Among SVM kernels, RBF consistently outperformed Linear, Polynomial, and Sigmoid kernels.
-- Sigmoid kernel produced the weakest classification performance, especially on FashionMNIST.
-- FashionMNIST classification is more challenging due to visual similarity among clothing categories.
+- Neural Network memperoleh performa terbaik pada kedua dataset.
+- Model NN-2 menghasilkan performa tertinggi pada MNIST dengan F1-score sebesar 0.9808.
+- Model NN-1 menghasilkan performa terbaik pada FashionMNIST dengan F1-score sebesar 0.8802.
+- Pada kelompok SVM, kernel RBF secara konsisten mengungguli kernel Linear, Polynomial, dan Sigmoid.
+- Kernel Sigmoid menghasilkan performa klasifikasi paling rendah, terutama pada FashionMNIST.
+- Dataset FashionMNIST memiliki tingkat kesulitan klasifikasi yang lebih tinggi karena kemiripan visual antar kategori pakaian.
 
 ---
 
-# ⚙️ Technical Details
+# ⚙️ Detail Teknis
 
 <details>
-<summary>Neural Network Training Details</summary>
+<summary>Detail Training Neural Network</summary>
 
-### Hyperparameters
+### Hyperparameter
 
-- Epochs: 10
+- Epoch: 10
 - Batch Size: 64
 - Learning Rate: 0.001
 
@@ -179,9 +179,9 @@ From the experimental results:
 </details>
 
 <details>
-<summary>SVM Kernel Details</summary>
+<summary>Detail Kernel SVM</summary>
 
-### Kernels Used
+### Kernel yang Digunakan
 
 - Linear
 - Polynomial (degree=3)
@@ -190,25 +190,25 @@ From the experimental results:
 
 ### Preprocessing
 
-- StandardScaler normalization
-- Flattened image vector (784 features)
+- Normalisasi menggunakan StandardScaler
+- Flatten citra menjadi 784 fitur
 
 </details>
 
 <details>
-<summary>Hardware Specification</summary>
+<summary>Spesifikasi Perangkat</summary>
 
-### System
+### Sistem
 
 - AMD Ryzen 7 6800H
 - NVIDIA GeForce RTX 3050 Laptop GPU
-- 16 GB RAM
+- RAM 16 GB
 
 </details>
 
 ---
 
-# 📁 Project Structure
+# 📁 Struktur Proyek
 
 ```bash
 UTS_Data_Mining/
@@ -216,15 +216,16 @@ UTS_Data_Mining/
 ├── models/
 │
 ├── notebooks/
-│   ├── 1_data_preparation.ipynb
-│   ├── 2_neural_network_training.ipynb
-│   ├── 3_svm_training.ipynb
-│   └── 4_evaluation_visualization.ipynb
+│   ├── 01_setup_and_dataset.ipynb
+│   ├── 02_train_neural_network.ipynb
+│   ├── 03_train_svm.ipynb
+│   └── 04_evaluation_and_comparison.ipynb
 │
 ├── results/
 │   ├── comparison_chart.png
 │   ├── nn_results.csv
 │   ├── svm_results.csv
+│   ├── metrics_results.csv
 │   └── confusion_matrix/
 │
 ├── README.md
