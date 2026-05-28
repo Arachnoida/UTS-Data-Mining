@@ -1,29 +1,64 @@
 # UTS Data Mining - Neural Network vs SVM
 
-## Deskripsi
+## Comparative Analysis of Neural Network and Support Vector Machine on MNIST and FashionMNIST Datasets
 
-Project UTS mata kuliah Data Mining yang membandingkan performa Neural Network dan Support Vector Machine (SVM) pada dataset MNIST dan FashionMNIST.
+Project UTS mata kuliah Data Mining yang bertujuan membandingkan performa algoritma Neural Network dan Support Vector Machine (SVM) pada klasifikasi citra menggunakan dataset MNIST dan FashionMNIST.
 
-## Dataset
+---
+
+# Dataset
+
+Dataset yang digunakan:
 
 - MNIST
+  - Dataset digit tulisan tangan
+  - 10 kelas
+  - Grayscale 28×28
+
 - FashionMNIST
+  - Dataset citra fashion
+  - 10 kelas
+  - Grayscale 28×28
 
-## Model yang Digunakan
+---
 
-### Neural Network
+# Model yang Digunakan
 
-- NN-1: 784-128-10
-- NN-2: 784-256-Dropout-128-10
+## Neural Network
 
-### Support Vector Machine
+| Model | Arsitektur                  |
+| ----- | --------------------------- |
+| NN-1  | 784-128-10                  |
+| NN-2  | 784-256-Dropout(0.3)-128-10 |
 
-- Linear Kernel
-- Polynomial Kernel
-- RBF Kernel
-- Sigmoid Kernel
+Activation Function:
 
-## Evaluation Metrics
+- ReLU
+
+Optimizer:
+
+- Adam
+
+Loss Function:
+
+- CrossEntropyLoss
+
+---
+
+## Support Vector Machine (SVM)
+
+Kernel yang digunakan:
+
+- Linear
+- Polynomial
+- RBF
+- Sigmoid
+
+---
+
+# Evaluation Metrics
+
+Evaluasi model menggunakan:
 
 - Accuracy
 - Precision
@@ -31,24 +66,75 @@ Project UTS mata kuliah Data Mining yang membandingkan performa Neural Network d
 - F1-score
 - Confusion Matrix
 
-## Environment
+---
+
+# Hasil Utama
+
+| Dataset      | Best Model            | F1-score |
+| ------------ | --------------------- | -------- |
+| MNIST        | Neural Network (NN-2) | 0.9808   |
+| FashionMNIST | Neural Network (NN-1) | 0.8802   |
+
+Kernel terbaik pada SVM:
+
+- RBF Kernel
+
+---
+
+# Perbandingan F1-score Model
+
+![Comparison Chart](results/comparison_chart.png)
+
+---
+
+# Struktur Project
+
+```bash
+UTS_Data_Mining/
+│
+├── notebooks/
+├── results/
+├── models/
+├── README.md
+└── requirements.txt
+```
+
+---
+
+# Environment
 
 - Python 3.11
 - PyTorch CUDA 12.6
-- NVIDIA RTX 3050 Laptop GPU
+- NVIDIA GeForce RTX 3050 Laptop GPU
+- VS Code
 
-## Hasil Utama
+---
 
-### MNIST
+# Cara Menjalankan Project
 
-Best Model: Neural Network (NN-2)
-F1-score: 0.9808
+## Clone repository
 
-### FashionMNIST
+```bash
+git clone https://github.com/Arachnoida/UTS-Data-Mining.git
+```
 
-Best Model: Neural Network (NN-1)
-F1-score: 0.8802
+## Install dependencies
 
-## Author
+```bash
+pip install -r requirements.txt
+```
+
+## Jalankan notebook
+
+Gunakan Jupyter Notebook atau VS Code untuk menjalankan notebook pada folder:
+
+```bash
+notebooks/
+```
+
+---
+
+# Author
 
 Ida Bagus Gede Dhananjaya
+Universitas Udayana
