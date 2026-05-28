@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧠 Neural Network vs Support Vector Machine
+# Neural Network vs Support Vector Machine
 
 ### Analisis Komparatif pada Dataset MNIST dan FashionMNIST
 
@@ -17,7 +17,7 @@ Implementasi dan Perbandingan Model Machine Learning menggunakan PyTorch dan Sci
 
 ---
 
-# 📌 Gambaran Umum Proyek
+# Gambaran Umum Proyek
 
 Proyek ini dikembangkan sebagai tugas mata kuliah **Data Mining** dengan tujuan membandingkan performa algoritma **Neural Network** dan **Support Vector Machine (SVM)** pada tugas klasifikasi citra menggunakan dataset **MNIST** dan **FashionMNIST**.
 
@@ -33,7 +33,7 @@ Proyek ini memanfaatkan:
 
 ---
 
-# 🗂️ Dataset
+# Dataset
 
 ## MNIST
 
@@ -49,7 +49,7 @@ Proyek ini memanfaatkan:
 
 ---
 
-# 🧠 Model yang Digunakan
+# Model yang Digunakan
 
 ## Neural Network
 
@@ -83,7 +83,7 @@ Kernel yang digunakan:
 
 ---
 
-# 📏 Metrik Evaluasi
+# Metrik Evaluasi
 
 Model dievaluasi menggunakan:
 
@@ -95,7 +95,7 @@ Model dievaluasi menggunakan:
 
 ---
 
-# 🏆 Hasil Terbaik
+# Hasil Terbaik
 
 | Dataset      | Model Terbaik         | F1-score |
 | ------------ | --------------------- | -------- |
@@ -106,7 +106,7 @@ Model dievaluasi menggunakan:
 
 ---
 
-# 📊 Perbandingan Model
+# Perbandingan Model
 
 ## Grafik Perbandingan F1-score
 
@@ -114,7 +114,7 @@ Model dievaluasi menggunakan:
 
 ---
 
-# 🔍 Analisis Confusion Matrix
+# Analisis Confusion Matrix
 
 ## FashionMNIST - Neural Network Terbaik (NN-1)
 
@@ -146,7 +146,7 @@ Model dievaluasi menggunakan:
 
 ---
 
-# 📈 Ringkasan Analisis
+# Ringkasan Analisis
 
 Berdasarkan hasil eksperimen yang dilakukan:
 
@@ -159,7 +159,7 @@ Berdasarkan hasil eksperimen yang dilakukan:
 
 ---
 
-# ⚙️ Detail Teknis
+# Detail Teknis
 
 <details>
 <summary>Detail Training Neural Network</summary>
@@ -208,7 +208,7 @@ Berdasarkan hasil eksperimen yang dilakukan:
 
 ---
 
-# 📁 Struktur Proyek
+# Struktur Proyek
 
 ```bash
 UTS_Data_Mining/
